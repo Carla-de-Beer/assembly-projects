@@ -1,7 +1,14 @@
 This is an encryption system that reads in a given text file 
-and then encrypts the data found inside the file by 
-reading in one byte at a time, rotating each byte left by 1 bit, 
-incrementigng the byte by one bit, and then moving on to the next byte, 
-repeating the process until the EOF is reached. 
+and then encrypts the data found inside the file by: 
+  - reading in one byte at a time-
+  - rotating each byte left by 1 bit
+  - incrementing the byte by one bit
+  - repeating the process with each byte until the EOF is reached.
+
+To decrypt an encrypted file, follow to process in reverse: 
+  - read in one byte at a time
+  - decrement the byte
+  - rotate the byte right by one
+  - repeat the process with each byte until the EOF is reached.
 
 Execute the given C-file to generate the encrypted file.
