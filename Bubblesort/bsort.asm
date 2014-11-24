@@ -30,7 +30,7 @@ bsort:
 	  imul 	rax, 4
 	  add 	rax, rdi
     
-	  xor		r9, r9
+	  xor	r9, r9
 	  xor 	r9, rsi
     
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
