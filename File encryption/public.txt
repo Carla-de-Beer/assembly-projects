@@ -1,0 +1,7 @@
+This is an encryption system that reads in a given text file 
+and then encrypts the data found inside the file by 
+reading in one byte at a time, rotating each byte left by 1 bit, 
+incrementigng the byte by one bit, and then moving on to the next byte, 
+repeating the process until the EOF is reached. 
+
+Execute the given C-file to generate the encrypted file.
