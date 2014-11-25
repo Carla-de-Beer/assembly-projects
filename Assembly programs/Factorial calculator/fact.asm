@@ -1,6 +1,6 @@
 ; Carla de Beer
 ; Assembly program that calculates factorials for single digit inputs 
-; November 2014
+; Date created:  08/09/2014
 
 section	.data	
   nl db "",2,0
@@ -90,7 +90,7 @@ _start:
     xor ecx, ecx        
   .Loop_1:
     xor edx, edx
-    div rbx             	; rbx = rax Remainder rdx
+    div rbx             	; rbx = rax remainder rdx
     push dx             	; LIFO
     add cl, 1
     or  rax, rax        
