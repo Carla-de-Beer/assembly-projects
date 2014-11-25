@@ -1,10 +1,12 @@
 ; Carla de Beer
+
 ; Assembly function that encrypts a given text file by doing the following:
 ; - selecting one byte at a time;
 ; - rotating the byte left by one bit
 ; - incrementing the byte
 ; - repeating the process ubntil EOF is reached
-; November 2014
+
+; Date created: 31/10/2014
 
 segment .data
   align   	8

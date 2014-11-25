@@ -1,7 +1,10 @@
 ; Carla de Beer
+
 ; Assembly function that employs the Newton Raphson method to approximate 
-; the root of a polynomial function of the form ax^6 + bx^5 + cx^4 + dx^3 + ex^3 + fx^2 + gx + h
-; November 2014
+; the root of a polynomial function of the form:
+; ax^6 + bx^5 + cx^4 + dx^3 + ex^3 + fx^2 + gx + h
+
+; Date created: 31/10/2014
 
 segment .data
   align 	8
@@ -45,7 +48,7 @@ newton:
   movsd xmm7, [zero]		; err = xmm7
   movsd	xmm7, [tol]		
   addsd	xmm7, [one]		; err = tol + 1;    
-  xor	rcx, rcx		; iter
+  xor	ecx, ecx		; iter
   movsd xmm8, [x]		; x = xmm8	
   
   while:
@@ -176,6 +179,6 @@ newton:
       jmp .done
       
   .done:  
-    xor rax, rax
+    xor eax, eax
     pop rbp
     ret

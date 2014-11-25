@@ -1,6 +1,6 @@
 ; Carla de Beer
-; Assembly language program that implements a bubble sort algorithm
-; November 2014
+; Assembly language function, called via C, that implements a bubble sort algorithm
+; Date created: 09/10/2014
 
 segment .data
 
@@ -30,7 +30,7 @@ bsort:
 	  imul 	rax, 4
 	  add 	rax, rdi
     
-	  xor	r9, r9
+	  xor 	r9, r9
 	  xor 	r9, rsi
     
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

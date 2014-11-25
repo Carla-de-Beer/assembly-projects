@@ -1,7 +1,9 @@
 ; Carla de Beer
-; Assembly program, called via C, that reads and displays 
+
+; Assembly function, called via C, that reads and displays 
 ; the data contained in a .txt input file
-; November 2014
+
+; Date created: 31/10/2014
 
 segment .data
   align   	8

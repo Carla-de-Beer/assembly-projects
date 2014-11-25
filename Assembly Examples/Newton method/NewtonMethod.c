@@ -1,6 +1,10 @@
-/* Assembly function, called via C, that employs the Newton Raphson method to approximate 
- * the root of a polynomial function of the form:
- * ax^6 + bx^5 + cx^4 + dx^3 + ex^3 + fx^2 + gx + h. */
+// Carla de Beer
+
+// Assembly function, called via C, that employs the Newton Raphson method to approximate 
+// the root of a polynomial function of the form:
+// ax^6 + bx^5 + cx^4 + dx^3 + ex^3 + fx^2 + gx + h
+
+// Date created; 31/10/2014
 
 #include <stdio.h>
 

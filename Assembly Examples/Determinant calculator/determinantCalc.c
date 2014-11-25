@@ -1,6 +1,10 @@
-/* Program that calculates the determinant for a 2x2 or 3x3 matrix.
- * Input greater than this is reported as an error.
- * Input both a matrix array and matrix size. */
+// Carla de Beer
+
+// Assembly funcion, called via this C-file, that calculates the determinant for a 2x2 or 3x3 matrix.
+// Input greater than this is reported as an error.
+// Input both a matrix array and matrix size. 
+
+// Date created: 09/10/2014
 
 #include <stdio.h>
 
@@ -17,9 +21,9 @@ int main()
 	//int array[4] = {3, 4, -2, 3}; //17
     
 	//int array[9] = {1, 2, 3, 4, 5, 6, 7, 8, 9}; //0
-	int array[9] = {4, 3, 5, -1, 4, -3, 6, 7, 8}; //27
+	//int array[9] = {4, 3, 5, -1, 4, -3, 6, 7, 8}; //27
 	//int array[9] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
-	//int array[9] = {13, 5, 3, -4, 12, 30, 17, -9, 0}; //5556
+	int array[9] = {13, 5, 3, -4, 12, 30, 17, -9, 0}; //5556
 	//int array[9] = {5, -3, 2, 1, 0, 2, 2, -1, 3}; //5
 	//int array[9] = {1, 1, 1, 1, 14, 3, 4, -4, 6}; //42
     
@@ -35,6 +39,6 @@ int main()
 		if((i+1)%n == 0) printf("\n");
 	}
 	ans = det(array,n);
-	printf("%d\n",ans);
+	printf("%s%d\n", "Calculation successful? : ", ans);
 	return 0;
 }

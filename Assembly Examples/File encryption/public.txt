@@ -1,6 +1,6 @@
 This is an encryption system that reads in a given text file 
 and then encrypts the data found inside the file by: 
-  - reading in one byte at a time-
+  - reading in one byte at a time
   - rotating each byte left by 1 bit
   - incrementing the byte by one bit
   - repeating the process with each byte until the EOF is reached.

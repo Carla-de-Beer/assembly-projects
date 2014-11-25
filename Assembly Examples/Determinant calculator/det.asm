@@ -1,7 +1,10 @@
 ; Carla de Beer
-; Assembly language program that calculates the determinant 
-; of a 2x2 or 3x3 matrix
-; November 2014
+
+; Assembly language function, called via C, that calculates 
+; the determinant of a 2x2 or 3x3 matrix
+; Input greater than this is reported as an error. 
+
+; Date created: 09/10/2014
 
 segment .data
   msg 	db 	"Error", 0xa, 0
@@ -34,7 +37,7 @@ det
 	lea 	rdi, [fmt]
 	mov 	rsi, rax
 
-	xor 	rax, rax		; 0 floating point parameters    
+	xor 	eax, eax		; 0 floating point parameters    
 	call 	printf
     
  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -63,7 +66,7 @@ two:
     
 	  lea 	rdi, [fmt]
 	  mov 	rsi, rax
-	  xor 	rax, rax		; 0 floating point parameters    
+	  xor 	eax, eax		; 0 floating point parameters    
 	  call 	printf
     
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -128,10 +131,9 @@ two:
   error_msg:
     
 	  lea 	rdi, [msg]    
-	  xor 	rax, rax	  
-	  call 	printf
-	  
-	  xor 	rax, rax		; return 0 (determinant is not computable)  
+	  xor 	eax, eax	  
+	  call 	printf	  
+	  xor 	eax, eax		; return 0 (determinant is not computable)  
 	  jmp 	done
   
   done:      

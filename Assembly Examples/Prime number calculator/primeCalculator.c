@@ -1,3 +1,7 @@
+// Carla de Beer
+// Assembly function, called via this C-function, that calculates whether a number is prime or not
+// Date created: 29/09/2014
+
 #include <stdio.h>
 
 extern int prime(int number);

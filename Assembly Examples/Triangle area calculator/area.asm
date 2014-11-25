@@ -1,7 +1,9 @@
 ; Carla de Beer
-; Assembly program that inputs the area of a triangle based 
+
+; Assembly function that inputs the area of a triangle based 
 ; on the input of a a set of three 2D coordinates passed via the C function
-; November 2014
+
+; Date created: 09/10/2014
 
 segment .data
   half 		dd 	0.5  
@@ -44,4 +46,3 @@ area:
   
   leave
   ret
-	

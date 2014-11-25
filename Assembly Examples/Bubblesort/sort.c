@@ -1,3 +1,7 @@
+// Carla de Beer
+// Assembly language function, called via this C-function, that implements a bubble sort algorithm
+// Date created: 09/10/2014
+
 #include <stdio.h>
 
 int main()
